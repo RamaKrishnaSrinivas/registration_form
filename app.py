@@ -39,19 +39,19 @@ combined_html = """
 <html>
 <head>
     <title>Registration_form</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
-<body style="text-align: center; background:orange; padding-top: 20px;">
+<body>
     <h2>Register</h2>
     <form action="/" method="post">
         <input type="text" name="name" placeholder="Enter your name" required>
-        <br><br>
+        <br>
         <input type="email" name="email" placeholder="Enter your email" required>
-        <br><br>
+        <br>
         <input type="password" name="password" placeholder="Enter your password" required>
-        <br><br>
-    <!-- CSRF token here -->
-    <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
-           <button type="submit" name="form_type" value="register">Register</button>
+        <br>
+        <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+        <button type="submit" name="form_type" value="register">Register</button>
     </form>
 
     {% if success_message is defined %}
@@ -62,18 +62,16 @@ combined_html = """
         <h3 style="color: red;">{{ error_message }}</h3>
     {% endif %}
     <hr>
-
     <p>or</p>
     
     <h2>Login</h2>
     <form action="/" method="post">
         <input type="email" name="email" placeholder="Enter your email" required>
-        <br><br>
+        <br>
         <input type="password" name="password" placeholder="Enter your password" required>
-    <br><br>
-    <!-- CSRF token here too -->
-    <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">     
-   <button type="submit" name="form_type" value="Login">Login</button>
+        <br>
+        <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">     
+        <button type="submit" name="form_type" value="Login">Login</button>
     </form>
 </body>
 </html>
