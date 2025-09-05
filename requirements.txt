@@ -1,6 +1,11 @@
+flask
+werkzeug
 Flask
-Flask-WTF
-Flask-Talisman
-Flask-Limiter
 Werkzeug
+Flask-Talisman
+Flask-WTF
+WTForms
+Flask-Limiter
+bleach
 gunicorn
+cryptography
