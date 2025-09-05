@@ -11,7 +11,7 @@ import re
 import time
 
 
-app = Flask(__name__)
+gunicorn app:app
 
 
 def sanitize_input(data: str) -> str:
