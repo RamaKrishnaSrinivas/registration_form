@@ -79,11 +79,17 @@ combined_html = """
 </html>
 """
 dashboard_html="""
+<!DOCTYPE html>
+<html>
+<head>
+    <title>welcome</title>
+</head>
 <html>
 <body>
 <h1>welcome to my world....</h1>
 </html>
 </body>
+"""
 
 @app.route('/', methods=['GET', 'POST'])
 @limiter.limit("5 per hour")  # Limit this route
