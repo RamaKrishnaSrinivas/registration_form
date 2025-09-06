@@ -44,7 +44,7 @@ combined_html = """
 <body>
 NOTE: <p>1) There is only 5 attempts per day based on email</p>
       <p>2) while typing the password we should correctly entered that.if we didn't there is no way to recover or change the password.</p>
-    <h2>Register</h2>
+    <br><br><h2>Register</h2>
     <form action="/" method="post">
         <input type="text" name="name" placeholder="Enter your name" required>
         <br>
