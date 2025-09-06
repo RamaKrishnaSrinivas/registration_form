@@ -43,7 +43,7 @@ combined_html = """
 </head>
 <body>
 NOTE: <p>1) There is only 5 attempts per day based on email</p>
-      <p>2) while typing the password we should correctly entered that.if we didn't there is no way to recover or change the password.</p>
+      <p>2) While typing the password in registration form, we should enter it remembered password. If we forgot the password to login,there is no option to forgot password or recover.. So, be aware while entering the password</p>
     <br><br><h2>Register</h2>
     <form action="/" method="post">
         <input type="text" name="name" placeholder="Enter your name" required>
