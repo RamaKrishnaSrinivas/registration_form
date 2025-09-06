@@ -1,26 +1,20 @@
-# Flask Authentication App with Email Rate Limiting
+FLASK AUTHENTICATION APP
+This is a simple Flask-based Registration and Login System with security features:
+- CSRF Protection
+- HTTPS enforced using Flask-Talisman
+- Password hashing with Werkzeug
+- Input sanitization using Bleach
+- Rate limiting with Flask-Limiter
+- SQLite database for storing users
 
-This is a Flask web application that provides **Register** and **Login** functionality with:
-- CSRF protection using Flask-WTF
-- Secure password hashing using Werkzeug
-- Flask-Talisman for security headers
-- Flask-Limiter for **email-based rate limiting** (prevents brute-force login)
-- SQLite as the database
+FEATURES
+- User registration with validation
+- Secure password hashing
+- Login with rate-limit protection
+- Dashboard page after login
+- Basic CSS support (`static/css/style.css`)
 
-## Features
-- User registration (with hashed passwords)
-- User login
-- Rate limiting by email (e.g., 3 attempts per day)
-- Basic security best practices enabled
+REQUIREMENTS
+Python 3.9+  
+The required libraries are in `requirements.txt`:
 
-## Tech Stack
-- **Backend**: Flask (Python)
-- **Database**: SQLite (lightweight, file-based)
-- **Security**: Flask-WTF, CSRF, Werkzeug, Talisman
-- **Rate Limiting**: Flask-Limiter
-
-## Run Locally
-1. Clone the repo:
-   ```bash
-   git clone https://github.com/your-username/registration_form.git
-   cd registration_form
